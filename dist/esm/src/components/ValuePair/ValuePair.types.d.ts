@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 import { CSSObject } from "styled-components";
 export interface ValuePairMain {
-  label?: ReactNode;
-  value?: ReactNode;
+    label?: ReactNode;
+    value?: ReactNode;
 }
 export interface ValuePairCommon {
-  direction?: "column" | "row";
-  sx?: CSSObject;
+    direction?: "column" | "row";
+    sx?: CSSObject;
 }
 export type ValuePairProps = ValuePairMain & ValuePairCommon;

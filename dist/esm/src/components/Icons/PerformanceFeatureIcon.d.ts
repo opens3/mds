@@ -1,5 +1,3 @@
 import { SVGProps } from "react";
-declare const PerformanceFeatureIcon: (
-  props: SVGProps<SVGSVGElement>,
-) => import("react/jsx-runtime").JSX.Element;
+declare const PerformanceFeatureIcon: (props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element;
 export default PerformanceFeatureIcon;

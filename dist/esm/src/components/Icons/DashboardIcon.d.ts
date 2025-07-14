@@ -1,5 +1,3 @@
 import { SVGProps } from "react";
-declare const DashboardIcon: (
-  props: SVGProps<SVGSVGElement>,
-) => import("react/jsx-runtime").JSX.Element;
+declare const DashboardIcon: (props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element;
 export default DashboardIcon;
