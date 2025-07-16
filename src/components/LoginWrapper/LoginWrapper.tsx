@@ -30,6 +30,9 @@ const CustomLogin = styled.div(({ theme }) => {
   return {
     "& .mainContainer": {
       height: "100vh",
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: get(theme, "login.promoBG", "#000110"),
     },
     "& .decorationPanel": {
       position: "relative",
@@ -109,14 +112,18 @@ const CustomLogin = styled.div(({ theme }) => {
       },
     },
     "& .formPanel": {
-      maxWidth: "520px",
+      width: "520px",
       backgroundColor: get(theme, "login.formBG", "#fff"),
       [`@media (min-width: ${get(
         breakPoints,
         "xs",
         0,
       )}px) and (max-width: ${get(breakPoints, "md", 0)}px)`]: {
-        maxWidth: "100%",
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
       },
       "& .logoContainer": {
         display: "flex",
@@ -185,38 +192,7 @@ const LoginWrapper: FC<LoginWrapperProps> = ({
   return (
     <CustomLogin>
       <Grid container className={"mainContainer"} wrap={"nowrap"}>
-        <Grid item xs={"hidden"} sm={"hidden"} md className={"decorationPanel"}>
-          {(promoInfo || promoHeader) && (
-            <Grid container>
-              <Grid item className={"promoContainer"}>
-                <Grid item className={"promoHeader"}>
-                  {promoHeader}
-                </Grid>
-                <Grid item className={"promoInfo"}>
-                  {promoInfo}
-                </Grid>
-              </Grid>
-            </Grid>
-          )}
-          <Grid item className={"videoContainer"}>
-            {GPUAvailable && backgroundAnimation ? (
-              <video
-                autoPlay
-                playsInline
-                muted
-                loop
-                disablePictureInPicture
-                poster={poster}
-                className={"videoBG"}
-              >
-                <source src={bgVideo} type={"video/mp4"} />
-              </video>
-            ) : (
-              <img src={poster} className={"videoBG"} />
-            )}
-          </Grid>
-        </Grid>
-        <Grid item xs={12} className={"formPanel"}>
+        <Grid item className={"formPanel"}>
           <Grid container>
             <Grid item xs={12} className={"logoContainer"}>
               <ApplicationLogo {...logoProps} />
