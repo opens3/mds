@@ -30,11 +30,6 @@ declare const logoVariants: {
         useThemeColor: boolean;
         content: import("react/jsx-runtime").JSX.Element;
     };
-    opens3: {
-        viewBox: string;
-        useThemeColor: boolean;
-        content: import("react/jsx-runtime").JSX.Element;
-    };
     demo: {
         viewBox: string;
         useThemeColor: boolean;

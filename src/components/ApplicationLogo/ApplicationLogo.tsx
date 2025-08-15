@@ -132,7 +132,7 @@ const ApplicationLogo: FC<ApplicationLogoProps> = ({
             <MinIOEnterpriseOSVertical inverse={!!inverse} onClick={onClick} />
           );
         default:
-          return <ThemedLogo onClick={onClick} variant="opens3" />;
+          return <ThemedLogo onClick={onClick} variant="custom" />;
       }
   }
 };
