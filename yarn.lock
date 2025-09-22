@@ -3176,6 +3176,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/react-dom-shim@npm:9.1.7":
+  version: 9.1.7
+  resolution: "@storybook/react-dom-shim@npm:9.1.7"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^9.1.7
+  checksum: 10c0/bed0ebf47f2d2027a28d82be1af5c2413297bfae928b0c6d6a0752f3e30819821660c6abdcc75fa97e15593dc1c181dc36b36f488c8710db3adcabaf70695964
+  languageName: node
+  linkType: hard
+
 "@storybook/react-webpack5@npm:8.6.14":
   version: 8.6.14
   resolution: "@storybook/react-webpack5@npm:8.6.14"
@@ -3217,6 +3228,24 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/e447892d523b32a52708e6eabc142a3dc0433c23fc28d59206e3b03fe070df77e80998839c3496c22ad11b712499b8e0fbec0dacf31a006ea99b171dba74c43b
+  languageName: node
+  linkType: hard
+
+"@storybook/react@npm:9.1.7":
+  version: 9.1.7
+  resolution: "@storybook/react@npm:9.1.7"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/react-dom-shim": "npm:9.1.7"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^9.1.7
+    typescript: ">= 4.9.x"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/6ba0d3877075c380d8ab47423cc8e93ff297018fadbbe2ecd224e3d60e6a0fdba561ea84c1ffb39228cb2efd1d8d432710c6ec0337b30f74a62dc2384df96c91
   languageName: node
   linkType: hard
 
@@ -7968,7 +7997,7 @@ __metadata:
     "@storybook/addon-interactions": "npm:8.6.14"
     "@storybook/addon-links": "npm:8.6.14"
     "@storybook/addon-webpack5-compiler-babel": "npm:3.0.6"
-    "@storybook/react": "npm:8.6.14"
+    "@storybook/react": "npm:9.1.7"
     "@storybook/react-webpack5": "npm:8.6.14"
     "@storybook/test": "npm:^8.6.14"
     "@testing-library/jest-dom": "npm:^6.6.3"
