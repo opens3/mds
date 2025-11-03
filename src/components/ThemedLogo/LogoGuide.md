@@ -87,3 +87,7 @@ github: createLogoVariant(
 ```
 
 That's it! Your logo will be perfectly sized and integrated. 🚀
+
+To change the X icon to close sidebar, find it at /mds/src/components/Icons/MinIOTierIconXs
+
+To test locally, run yarn build at /mds, then change the /console/web-app/package.json mds to "mds": "file:../../mds",
